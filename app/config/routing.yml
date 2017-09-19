@@ -1,0 +1,17 @@
+keley:
+    resource: "@KeleyBundle/Resources/config/routing.yml"
+    prefix:   /
+
+rest:
+    resource: "@KeleyBundle/Resources/config/routing_rest.yml"
+    prefix:   /api
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+catalogue:
+    resource: "@KeleyBundle/Resources/config/routing.yml"
+    prefix:   /
+
+

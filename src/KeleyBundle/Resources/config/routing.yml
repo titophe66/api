@@ -1,0 +1,3 @@
+keley_homepage:
+    path:     /
+    defaults: { _controller: KeleyBundle:Default:index }

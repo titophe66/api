@@ -1,0 +1,40 @@
+user_rest:
+    path:     /users
+    defaults: { _controller: KeleyBundle:Users:UsersList }
+    methods: [GET]
+
+create_user_rest:
+    path:     /users
+    defaults: { _controller: KeleyBundle:Users:CreateUser }
+    methods: [POST]
+
+user_rest_id:
+    path:     /users/{id}
+    defaults: { _controller: KeleyBundle:Users:UsersId }
+    methods: [GET]
+
+update_user_rest:
+    path:     /users/{id}
+    defaults: { _controller: KeleyBundle:Users:UpdateUser }
+    methods: [POST]
+
+
+group_rest:
+    path:     /groups
+    defaults: { _controller: KeleyBundle:Group:GroupList }
+    methods: [GET]
+
+create_group_rest:
+    path:     /groups
+    defaults: { _controller: KeleyBundle:Group:CreateGroup }
+    methods: [POST]
+
+group_rest_id:
+      path:     /groups/{id}
+      defaults: { _controller: KeleyBundle:Group:GroupId }
+      methods: [GET]
+
+update_group_rest:
+    path:     /groups/{id}
+    defaults: { _controller: KeleyBundle:Group:UpdateGroup }
+    methods: [POST]
